@@ -1,0 +1,36 @@
+:root {
+  --color-bg-page: #F2F2F2;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-accent: #0075FF;
+
+  --color-gray: #9FADC2;
+  --color-text: #3E3E3E;
+  --color-button-hover-click: #005ECC;
+
+  --color-input-bg: #F7F8FF;
+  --color-input-border-hover: #CCD0E0;
+  --color-input-placeholder: #8F99A8;
+
+  --box-shadow-default:  0 6px 23px 0 rgba(0, 117, 255, 0.46);
+  --box-shadow-hover:  0 13px 27px 0 rgba(0, 83, 181, 0.46);
+  --box-shadow-click:  0 8px 14px 0 rgba(0, 83, 181, 0.48);
+
+
+
+  --border: 2px solid currentColor;
+
+  --border-radius: 8px;
+
+  --font-family-base: 'Roboto';
+
+  --container-width: #{fluid-to-laptop(
+      $container-desktop-width,
+      $container-laptop-width
+    )};
+  --container-padding-x: 20px;
+
+  --transition-duration: 0.2s;
+}
