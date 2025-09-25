@@ -66,9 +66,12 @@ export default defineConfig({
 
   resolve: {
     // Настройка алиаса @/ → src/
-    alias: {
-      '@': resolve(process.cwd(), 'src'),
-    }
+    alias: [
+      {
+        find: '@/',
+        replacement: path.resolve('src') + '/',
+      },
+    ],
   },
 
   css: {
