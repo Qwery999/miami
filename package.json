@@ -1,12 +1,10 @@
 {
-  "name": "friendly-frontend-starter",
+  "name": "miami",
   "version": "1.0.0",
-  "private": true,
+  "homepage": "https://qwery999.github.io/miami",
+  "private": false,
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AleksanderLamkov/friendly-frontend-starter.git"
-  },
+
   "type": "module",
   "scripts": {
     "start": "minista",
