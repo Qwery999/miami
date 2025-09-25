@@ -40,7 +40,6 @@ export default (props) => {
           rel="manifest"
           href={manifest}
         />
-        <base href="/miami/" />
       </Head>
       <Header url={url} />
       <Content>{children}</Content>

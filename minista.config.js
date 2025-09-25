@@ -99,7 +99,6 @@ export default defineConfig({
 
   // Можно прокинуть дополнительные опции в Vite
   vite: {
-    base: '/miami/',
     css: {
       devSourcemap: true,
     },

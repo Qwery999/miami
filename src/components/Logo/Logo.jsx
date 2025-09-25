@@ -15,7 +15,7 @@ export default (props) => {
     >
       <img
         className="logo__image"
-        src="./images/logo.svg"
+        src="/images/logo.svg"
         alt=""
         width={136}
         height={82}
