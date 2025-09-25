@@ -1,2 +1,27 @@
 .about {
+  padding-block: fluid(104, 64);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      row-gap: 48px;
+    }
+  }
+
+  &__title-text {
+    max-width: fluid(259, 240);
+
+    &--blue {
+      color: var(--color-accent);
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
 }

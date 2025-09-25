@@ -7,6 +7,7 @@ export default (props) => {
     className,
     id = getIdFromTitle(props.label),
     label,
+    labelHidden = false,
     /**
      * undefined (default) | 'email' | 'textarea'
      */
@@ -27,7 +28,9 @@ export default (props) => {
 
   return (
     <div className={clsx('field', className)}>
-      <label className="field__label" htmlFor={id}>
+      <label className={clsx("field__label",
+        labelHidden && 'visually-hidden'
+        )} htmlFor={id}>
         {label}
         {isRequired && (
           <span className="field__required-star" aria-hidden="true">

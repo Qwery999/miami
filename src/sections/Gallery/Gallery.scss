@@ -1,0 +1,23 @@
+.gallery {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+
+    @include mobile {
+      align-items: stretch;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    row-gap: fluid(40, 32);
+  }
+
+  &__button {
+    @include mobile {
+      display: contents;
+    }
+  }
+}

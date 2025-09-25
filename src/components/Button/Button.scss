@@ -1,15 +1,74 @@
 .button {
   display: inline-flex;
   align-items: center;
-  column-gap: 0.3em;
-  padding: 8px 12px;
-  color: var(--color-black);
-  background-color: var(--color-white);
+  justify-content: center;
+  column-gap: 8px;
+  padding: 20px 47px;
+  color: var(--color-accent);
+  font-weight: 700;
+  line-height: 16px;
+  background-color: transparent;
   border: var(--border);
-  border-radius: var(--border-radius-m);
+  border-radius: var(--border-radius);
+
+  &--second {
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    border: none;
+  }
+
+  &--icon {
+    justify-content: flex-end;
+    color: var(--color-white);
+    padding: 6px;
+    border: none;
+    overflow: hidden;
+    width: 50px;
+    transition: width 0.3s ease;
+
+    &>.button__label {
+      white-space: nowrap;
+      margin-left: 10px;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+
+
+    }
+
+    &>.button__icon {
+      flex-shrink: 0;
+    }
+  }
 
   @include hover {
     color: var(--color-white);
-    background-color: var(--color-accent);
+    background-color: var(--color-button-hover-click);
+    border-color: var(--color-button-hover-click);
+    box-shadow: var(--box-shadow-hover);
+
+    &.button--icon {
+      background-color: transparent;
+      box-shadow: none;
+      width: 200px;
+
+      &>.button__label {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:active {
+    box-shadow: var(--box-shadow-click);
+    scale: 0.95;
+
+    &.button--icon {
+      box-shadow: none;
+      scale: none;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
   }
 }

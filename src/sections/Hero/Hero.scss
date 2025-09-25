@@ -1,3 +1,29 @@
 .hero {
-  padding-block: 50px;
+  height: 100vh;
+  margin-top: -131px;
+  padding-block: 80px;
+  background: url("/src/assets/images/hero/bg.jpg") center/cover no-repeat;
+
+  &__inner {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  &__title {
+    position: relative;
+    color: var(--color-white);
+    max-width: 493px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: -24px;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background-color: var(--color-white);
+    }
+  }
+
 }

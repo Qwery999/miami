@@ -1,9 +1,10 @@
 import './Footer.scss'
+import Logo from '@/components/Logo'
 
 export default () => {
   return (
     <footer className="footer">
-      <div className="footer__inner container">FOOTER</div>
+      <Logo className="footer__logo" loading="eager" />
     </footer>
   )
 }

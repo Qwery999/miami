@@ -15,25 +15,25 @@
   }
 
   &__control {
-    width: 100%;
-    max-width: 300px;
-    height: fluid-to-laptop(67, 53);
-    padding-inline: fluid-to-laptop(20, 16);
-    color: var(--color-white);
-    background-color: var(--color-black);
-    border: var(--border-width-m) solid var(--color-white);
+    width: fluid(411, 280);
+    height: 48px;
+    padding-inline: 17px;
+    color: var(--color-black);
+    font-size: 14px;
+    background-color: var(--color-input-bg);
+    border: 2px solid transparent;
     border-radius: var(--border-radius);
 
-    @include laptop {
-      border-radius: var(--border-radius-xs);
+    @include mobile {
+      width: 100%;
     }
 
     @include hover {
-      border-color: var(--color-white);
+      border: 2px solid var(--color-input-border-hover);
     }
 
     &:user-invalid {
-      border-color: var(--color-accent);
+      border: 1px solid red;
     }
 
     &:disabled {
@@ -41,13 +41,14 @@
     }
 
     &::placeholder {
-      color: var(--color-gray);
+      color: var(--color-input-placeholder);
+      font-weight: 400;
     }
   }
 
   textarea.field__control {
-    min-height: fluid(163, 109);
-    padding-block: fluid-to-laptop(20, 16);
+    min-height: 144px;
+    padding-block: 14px;
     resize: vertical;
   }
 }
