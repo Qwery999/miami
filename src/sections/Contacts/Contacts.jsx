@@ -9,6 +9,7 @@ export default () => {
       className='contacts'
       title='Contact us'
       titleId='contacts'
+      id='contacts'
     >
       <div className="contacts__inner">
         <address className="contacts__information">

@@ -10,23 +10,23 @@ export default (props) => {
   const menuItems = [
     {
       label: 'HOME',
-      href: '/1',
+      href: 'https://qwery999.github.io/miami/',
     },
     {
       label: 'ABOUT US',
-      href: '/2',
+      href: 'https://qwery999.github.io/miami/#about',
     },
     {
       label: 'GALLERY',
-      href: '/3',
+      href: 'https://qwery999.github.io/miami/#gallery',
     },
     {
       label: 'TESTIMONIALS',
-      href: '/4',
+      href: 'https://qwery999.github.io/miami/#testimonials',
     },
     {
       label: 'CONTACTS',
-      href: '/5',
+      href: 'https://qwery999.github.io/miami/#contacts',
     },
   ]
 

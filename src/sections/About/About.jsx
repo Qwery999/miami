@@ -8,6 +8,7 @@ export default (props) => {
 
   return (
     <section
+      id='about'
       className={clsx('about', className)}
     >
       <div className="about__inner container">

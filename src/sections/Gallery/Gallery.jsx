@@ -34,6 +34,7 @@ export default () => {
       className='gallery'
       title='Gallery'
       titleId='gallery'
+      id='gallery'
     >
       <div className="gallery__inner">
         <div className="gallery__cards">

@@ -29,6 +29,7 @@ export default () => {
       className='testimonials'
       title='Testimonials'
       titleId='testimonials'
+      id='testimonials'
     >
       <div className="testimonials__cards">
         {cards.map((card, index) => (
