@@ -1,6 +1,4 @@
 import Hero from '@/sections/Hero'
-import Button from '@/components/Button'
-import Field from '@/components/Field'
 import About from '@/sections/About'
 import Gallery from '@/sections/Gallery'
 import Testimonials from '@/sections/Testimonials'
