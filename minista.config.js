@@ -9,7 +9,7 @@ export default defineConfig({
   root: '',
 
   // Базовый путь (если деплой не в корень сайта, поменяй)
-  base: '/',
+  base: '/miami/',
 
   // Папка с публичными файлами (копируются как есть)
   public: 'public',
@@ -24,7 +24,7 @@ export default defineConfig({
 
     // Картинки (оптимизируются и ресайзятся при сборке)
     images: {
-      outDir: 'assets/images',
+      outDir: './assets/images',
       outName: '[name]',
       remoteName: 'remote',
       optimize: {
@@ -43,7 +43,7 @@ export default defineConfig({
 
     // SVG-спрайт из папки с иконками
     icons: {
-      srcDir: 'src/assets/icons',
+      srcDir: './src/assets/icons',
       outDir: 'assets/images',
       outName: '[dirname]',
       svgstoreOptions: {
