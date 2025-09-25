@@ -3,6 +3,7 @@ class OverlayMenu {
     root: '[data-js-overlay-menu]',
     dialog: '[data-js-overlay-menu-dialog]',
     burgerButton: '[data-js-overlay-menu-burger-button]',
+    link: '[data-js-menu-link]'
   }
 
   stateClasses = {
@@ -19,6 +20,7 @@ class OverlayMenu {
     this.burgerButtonElement = this.rootElement.querySelector(
       this.selectors.burgerButton
     )
+    this.linkElement = this.rootElement.querySelectorAll(this.selectors.link)
     this.bindEvents()
   }
 
@@ -30,6 +32,7 @@ class OverlayMenu {
 
   bindEvents() {
     this.burgerButtonElement.addEventListener('click', this.onBurgerButtonClick)
+    this.linkElement.addEventListener('click', this.onBurgerButtonClick)
   }
 }
 

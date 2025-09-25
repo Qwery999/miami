@@ -64,6 +64,7 @@ export default (props) => {
                         'header__menu-link',
                         href === url && 'is-active'
                       )}
+                      data-js-menu-link=""
                       href={href}
                     >
                       {label}
