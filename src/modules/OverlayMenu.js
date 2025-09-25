@@ -32,7 +32,9 @@ class OverlayMenu {
 
   bindEvents() {
     this.burgerButtonElement.addEventListener('click', this.onBurgerButtonClick)
-    this.linkElement.addEventListener('click', this.onBurgerButtonClick)
+    this.linkElement.forEach((element) => {
+      element.addEventListener('click', this.onBurgerButtonClick)
+    })
   }
 }
 
