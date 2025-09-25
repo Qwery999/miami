@@ -13,13 +13,34 @@ export default (props) => {
 
   return (
     <>
-      <Head htmlAttributes={{ lang: 'en' }}>
+      <Head htmlAttributes={{lang: 'en'}}>
         <title>Friendly Frontend Starter | {title}</title>
-        <script src="/src/main.js" type="module" />
-        <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
-        <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
-        <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
-        <link rel="manifest" href={manifest} />
+        <script
+          src="/src/main.js"
+          type="module"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href={appleTouchIcon}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href={favicon32}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href={favicon16}
+        />
+        <link
+          rel="manifest"
+          href={manifest}
+        />
+        <base href="/miami/" />
       </Head>
       <Header url={url} />
       <Content>{children}</Content>
